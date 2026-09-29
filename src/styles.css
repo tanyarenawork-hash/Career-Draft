@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * NextStep Lab design system — "Quiet luxury grid".
+ * Career Draft design system — "Quiet luxury grid".
  * Warm sand surfaces, near-black ink text, taupe accents, hairline borders.
  * All colors in oklch, exposed to Tailwind via @theme inline.
  */
