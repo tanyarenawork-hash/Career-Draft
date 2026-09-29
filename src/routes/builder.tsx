@@ -59,7 +59,7 @@ function BuilderPage() {
     input: EMPTY,
     bullets: [],
   });
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [errors, setErrors] = useState<{ title?: string; actions?: string }>({});
 
   const input = draft.input;
   const skills = useMemo(
@@ -73,7 +73,7 @@ function BuilderPage() {
   }
 
   function validate() {
-    const next: Record<string, string> = {};
+    const next: { title?: string; actions?: string } = {};
     if (input.title.trim().length < 3) next.title = "Add a short title (at least 3 characters).";
     if (input.actions.trim().length < 10)
       next.actions = "Describe what you did — one sentence is enough.";
