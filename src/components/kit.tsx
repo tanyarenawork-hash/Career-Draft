@@ -15,7 +15,7 @@ export function PageHeader({
 }) {
   return (
     <div className="mx-auto max-w-3xl px-5 pt-12 pb-8 text-center sm:pt-16">
-      <p className="text-xs font-semibold tracking-[0.18em] text-cobalt uppercase">{eyebrow}</p>
+      <p className="eyebrow-label">{eyebrow}</p>
       <h1 className="mt-3 text-3xl leading-tight sm:text-4xl">{title}</h1>
       <p className="mt-4 text-base text-muted-foreground">{description}</p>
     </div>
