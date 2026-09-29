@@ -18,13 +18,13 @@ import { newId, useLocalStore } from "@/lib/local-store";
 export const Route = createFileRoute("/case-studies")({
   head: () => ({
     meta: [
-      { title: "Project case study builder — NextStep Lab" },
+      { title: "Project case study builder — Career Draft" },
       {
         name: "description",
         content:
           "Write a concise portfolio case study: problem, audience, role, process, tools, solution, result, and what you'd improve.",
       },
-      { property: "og:title", content: "Project case study builder — NextStep Lab" },
+      { property: "og:title", content: "Project case study builder — Career Draft" },
       {
         property: "og:description",
         content: "A live-preview case study builder with save, edit, delete, and copy.",

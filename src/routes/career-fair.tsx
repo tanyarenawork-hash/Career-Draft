@@ -7,12 +7,12 @@ import { useLocalStore } from "@/lib/local-store";
 export const Route = createFileRoute("/career-fair")({
   head: () => ({
     meta: [
-      { title: "Career fair prep — NextStep Lab" },
+      { title: "Career fair prep — Career Draft" },
       {
         name: "description",
         content: "Draft a 30-second intro, plan questions for recruiters, and keep a fair-day checklist.",
       },
-      { property: "og:title", content: "Career fair prep — NextStep Lab" },
+      { property: "og:title", content: "Career fair prep — Career Draft" },
       {
         property: "og:description",
         content: "Build your elevator pitch and recruiter questions before the fair.",

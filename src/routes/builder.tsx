@@ -28,13 +28,13 @@ import { useLocalStore } from "@/lib/local-store";
 export const Route = createFileRoute("/builder")({
   head: () => ({
     meta: [
-      { title: "Experience-to-skills builder — NextStep Lab" },
+      { title: "Experience-to-skills builder — Career Draft" },
       {
         name: "description",
         content:
           "Enter one experience and get editable résumé bullets plus the transferable skills it demonstrates.",
       },
-      { property: "og:title", content: "Experience-to-skills builder — NextStep Lab" },
+      { property: "og:title", content: "Experience-to-skills builder — Career Draft" },
       {
         property: "og:description",
         content: "Turn what you actually did into honest, editable résumé bullets.",
