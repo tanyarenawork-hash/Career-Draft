@@ -121,7 +121,7 @@ export function generateBullets(input: ExperienceInput): string[] {
   const bullets: string[] = [];
 
   if (actions.length > 0) {
-    const first = lowerFirst(actions[0]);
+    const first = lowerFirst(actions[0] ?? "");
     bullets.push(title ? `${verbs[0]} ${title} by ${first}.` : `${verbs[0]} ${first}.`);
   } else if (title) {
     bullets.push(`${verbs[0]} ${title}.`);
