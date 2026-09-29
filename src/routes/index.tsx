@@ -75,78 +75,81 @@ const TOOLS = [
 function Index() {
   return (
     <div>
-      <section className="hero-glow">
-        <div className="mx-auto max-w-6xl px-5 pt-16 pb-14 sm:pt-24 sm:pb-20">
-          <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
-              For students with nontraditional experience
-            </span>
-            <h1 className="mt-5 text-4xl leading-[1.05] sm:text-6xl">
-              Your experience counts.
-              <span className="block text-cobalt">Learn how to show it.</span>
-            </h1>
-            <p className="mt-5 max-w-xl text-lg text-muted-foreground">
-              You ran a side business, freelanced, led a club, or shipped a class project. NextStep
-              Lab helps you translate that into the language internship recruiters read for.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Button asChild variant="hero" size="xl">
-                <Link to="/builder">
-                  Start building <ArrowRight className="size-4" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="xl" className="rounded-full">
-                <Link to="/library">See the lessons</Link>
-              </Button>
-            </div>
-            <p className="mt-4 text-sm text-muted-foreground">
-              No account needed. Your drafts stay in your browser.
-            </p>
+      <section className="hero-glow border-b border-border">
+        <div className="mx-auto max-w-4xl px-5 pt-20 pb-20 text-center sm:pt-28 sm:pb-24">
+          <span className="eyebrow-label inline-block rounded-full border border-border bg-card px-4 py-1.5">
+            For students with nontraditional experience
+          </span>
+          <h1 className="mt-7 text-5xl leading-[1.02] sm:text-7xl">
+            Your experience counts.
+            <span className="block italic">Learn how to show it.</span>
+          </h1>
+          <p className="mx-auto mt-6 max-w-xl text-lg font-light text-muted-foreground">
+            You ran a side business, freelanced, led a club, or shipped a class project. NextStep
+            Lab helps you translate that into the language internship recruiters read for.
+          </p>
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
+            <Button asChild variant="hero" size="xl">
+              <Link to="/builder">
+                Start building <ArrowRight className="size-4" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="xl" className="text-xs tracking-widest uppercase">
+              <Link to="/library">See the lessons</Link>
+            </Button>
           </div>
+          <p className="mt-5 text-sm text-muted-foreground">
+            No account needed. Your drafts stay in your browser.
+          </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-12" aria-labelledby="how-it-works">
-        <h2 id="how-it-works" className="text-2xl sm:text-3xl">
-          How this works
+      <section className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="how-it-works">
+        <p className="eyebrow-label">How this works</p>
+        <h2 id="how-it-works" className="mt-3 text-3xl sm:text-4xl">
+          Three steps, in order
         </h2>
-        <p className="mt-2 max-w-2xl text-muted-foreground">
-          Three steps, in order. Each one produces something you can paste into an application.
+        <p className="mt-3 max-w-2xl text-muted-foreground">
+          Each one produces something you can paste into an application.
         </p>
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
+        <div className="mt-10 grid gap-0 border-t border-l border-border md:grid-cols-3">
           {STEPS.map((step) => (
-            <div key={step.title} className="surface-card p-6">
-              <span className="grid size-10 place-items-center rounded-xl bg-cobalt-soft text-cobalt">
-                <step.icon className="size-5" />
-              </span>
-              <h3 className="mt-4 text-lg">{step.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{step.body}</p>
+            <div
+              key={step.title}
+              className="border-r border-b border-border bg-card/40 p-10 transition-colors duration-500 hover:bg-secondary"
+            >
+              <span className="eyebrow-label block">{step.step}</span>
+              <h3 className="mt-6 text-2xl italic">{step.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{step.body}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-12" aria-labelledby="tools">
-        <h2 id="tools" className="text-2xl sm:text-3xl">
-          The tools
-        </h2>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {TOOLS.map((tool) => (
-            <Link
-              key={tool.to}
-              to={tool.to}
-              className="surface-card group flex flex-col p-6 transition-all hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)]"
-            >
-              <span className="grid size-10 place-items-center rounded-xl bg-accent text-accent-foreground">
-                <tool.icon className="size-5" />
-              </span>
-              <h3 className="mt-4 text-lg">{tool.name}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{tool.body}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-cobalt">
-                Open <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-              </span>
-            </Link>
-          ))}
+      <section className="border-y border-border bg-secondary/50">
+        <div className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="tools">
+          <p className="eyebrow-label">The tools</p>
+          <h2 id="tools" className="mt-3 text-3xl sm:text-4xl">
+            Four ways to build your case
+          </h2>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+            {TOOLS.map((tool) => (
+              <Link
+                key={tool.to}
+                to={tool.to}
+                className="surface-card group flex flex-col p-7 transition-all hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)]"
+              >
+                <span className="grid size-10 place-items-center rounded-full border border-border bg-accent text-accent-foreground">
+                  <tool.icon className="size-5" />
+                </span>
+                <h3 className="mt-5 text-xl">{tool.name}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{tool.body}</p>
+                <span className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium tracking-widest text-cobalt uppercase">
+                  Open <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
