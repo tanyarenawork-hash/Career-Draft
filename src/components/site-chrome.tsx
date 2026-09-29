@@ -18,7 +18,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
         <Link to="/" className="flex items-baseline gap-1.5" onClick={() => setOpen(false)}>
           <span className="font-display text-2xl tracking-tight">
-            NextStep <span className="italic">Lab</span>
+            Career <span className="italic">Draft</span>
           </span>
         </Link>
 
@@ -73,7 +73,7 @@ export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-border">
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-10 text-xs tracking-wider text-muted-foreground uppercase sm:flex-row sm:items-center sm:justify-between">
-        <p>NextStep Lab — a student portfolio project about internship readiness.</p>
+        <p>Career Draft — a student portfolio project about internship readiness.</p>
         <p className="max-w-md normal-case tracking-normal">
           Privacy note: your drafts are saved only in this browser using local storage. Nothing is
           uploaded, and clearing your browser data removes them.

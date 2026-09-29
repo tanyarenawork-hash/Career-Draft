@@ -7,13 +7,13 @@ import { ExampleTag } from "@/components/kit";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "NextStep Lab — Your experience counts. Learn how to show it." },
+      { title: "Career Draft — Your experience counts. Learn how to show it." },
       {
         name: "description",
         content:
-          "NextStep Lab helps college students identify skills, build evidence, and prepare a pitch for internship applications and career fairs.",
+          "Career Draft helps college students identify skills, build evidence, and prepare a pitch for internship applications and career fairs.",
       },
-      { property: "og:title", content: "NextStep Lab — Your experience counts." },
+      { property: "og:title", content: "Career Draft — Your experience counts." },
       {
         property: "og:description",
         content:
@@ -85,8 +85,8 @@ function Index() {
             <span className="block italic">Learn how to show it.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg font-light text-muted-foreground">
-            You ran a side business, freelanced, led a club, or shipped a class project. NextStep
-            Lab helps you translate that into the language internship recruiters read for.
+            You ran a side business, freelanced, led a club, or shipped a class project. Career
+            Draft helps you translate that into the language internship recruiters read for.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
             <Button asChild variant="hero" size="xl">

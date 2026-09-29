@@ -5,12 +5,12 @@ import { PageHeader, Panel } from "@/components/kit";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — NextStep Lab" },
+      { title: "About — Career Draft" },
       {
         name: "description",
-        content: "Why NextStep Lab exists and how it helps students turn experience into career-ready materials.",
+        content: "Why Career Draft exists and how it helps students turn experience into career-ready materials.",
       },
-      { property: "og:title", content: "About — NextStep Lab" },
+      { property: "og:title", content: "About — Career Draft" },
       {
         property: "og:description",
         content: "Free tools that help students describe their experience with confidence.",
@@ -28,7 +28,7 @@ function AboutPage() {
       <PageHeader
         eyebrow="About"
         title="Helping students tell their story"
-        description="NextStep Lab turns everyday experience into clear résumé bullets, case studies, and career fair intros."
+        description="Career Draft turns everyday experience into clear résumé bullets, case studies, and career fair intros."
       />
       <div className="mx-auto max-w-3xl space-y-6 px-5">
         <Panel title="How it works">

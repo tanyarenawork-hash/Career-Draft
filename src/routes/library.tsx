@@ -5,12 +5,12 @@ import { PageHeader, Panel } from "@/components/kit";
 export const Route = createFileRoute("/library")({
   head: () => ({
     meta: [
-      { title: "Learning library — NextStep Lab" },
+      { title: "Learning library — Career Draft" },
       {
         name: "description",
         content: "Short guides on résumé bullets, portfolios, networking, and interviews.",
       },
-      { property: "og:title", content: "Learning library — NextStep Lab" },
+      { property: "og:title", content: "Learning library — Career Draft" },
       {
         property: "og:description",
         content: "Bite-sized career guides for students building their first portfolio.",
