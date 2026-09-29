@@ -153,7 +153,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 pb-8">
+      <section className="mx-auto max-w-6xl px-5 py-16">
         <div className="surface-card p-6 sm:p-8">
           <ExampleTag>sample output, not a personal accomplishment</ExampleTag>
           <p className="mt-4 font-display text-lg">From a one-line description…</p>
