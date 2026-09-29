@@ -27,17 +27,20 @@ export const Route = createFileRoute("/")({
 const STEPS = [
   {
     icon: Sparkles,
-    title: "1. Identify your skills",
+    step: "Step 01",
+    title: "Identify your skills",
     body: "Describe what you actually did. The skills builder names the transferable skills hiding in that work.",
   },
   {
     icon: FileText,
-    title: "2. Build evidence",
+    step: "Step 02",
+    title: "Build evidence",
     body: "Turn one experience into résumé bullets and a short case study a recruiter can read in a minute.",
   },
   {
     icon: MessagesSquare,
-    title: "3. Prepare your pitch",
+    step: "Step 03",
+    title: "Prepare your pitch",
     body: "Draft a 30-second introduction, questions to ask, and the follow-up email before the fair starts.",
   },
 ];
