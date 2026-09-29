@@ -31,7 +31,7 @@ export const Route = createFileRoute("/case-studies")({
       },
     ],
   }),
-  component: CaseStudiesPage;
+  component: CaseStudiesPage,
 });
 
 type CaseStudy = {
